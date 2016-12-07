@@ -1,0 +1,759 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  position: relative;
+  font-family: 'SFNSText', 'Helvetica Neue', 'Microsoft Yahei', 'SimHei', sans-serif; }
+
+.iCloud {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url(../images/bg.png) repeat 0 0; }
+
+@media screen and (min-width: 960px) {
+  .iCloud {
+    width: 100%; } }
+
+@media screen and (max-width: 960px) {
+  .iCloud {
+    width: 960px; } }
+
+.topinner .icon.green {
+  background-position: 0px -571px; }
+
+.topinner .icon.orange {
+  background-position: -102px -571px; }
+
+.topinner .icon.red {
+  background-position: -68px -571px; }
+
+.topinner .icon.yellow {
+  background-position: -85px -571px; }
+
+.topinner .icon.purple {
+  background-position: -34px -571px; }
+
+.topinner .icon.blue {
+  background-position: -51px -571px; }
+
+.topinner .icon.brown {
+  background-position: -133px -549px; }
+
+.color-list .green.color {
+  background-position: 0px -256px; }
+
+.color-list .orange.color {
+  background-position: 0px -381px; }
+
+.color-list .red.color {
+  background-position: 0px -356px; }
+
+.color-list .yellow.color {
+  background-position: 0px -306px; }
+
+.color-list .purple.color {
+  background-position: 0px -231px; }
+
+.color-list .blue.color {
+  background-position: 0px -281px; }
+
+.color-list .brown.color {
+  background-position: 0px -331px; }
+
+.color-list.sel.green {
+  background-position: 0px -33px;
+  background-image: url(../images/2.png); }
+
+.color-list.sel.orange {
+  background-position: 0px -198px;
+  background-image: url(../images/2.png); }
+
+.color-list.sel.red {
+  background-position: 0px -165px;
+  background-image: url(../images/2.png); }
+
+.color-list.sel.yellow {
+  background-position: 0px -99px;
+  background-image: url(../images/2.png); }
+
+.color-list.sel.purple {
+  background-position: 0px 0px;
+  background-image: url(../images/2.png); }
+
+.color-list.sel.blue {
+  background-position: 0px -66px;
+  background-image: url(../images/2.png); }
+
+.color-list.sel.brown {
+  background-position: 0px -132px;
+  background-image: url(../images/2.png); }
+
+.rb-innerl.green, .xuanx.green, .inner input.green {
+  color: green !important; }
+
+.rb-innerl.orange, .xuanx.orange, .inner input.orange {
+  color: orange !important; }
+
+.rb-innerl.red, .xuanx.red, .inner input.red {
+  color: red !important; }
+
+.rb-innerl.yellow, .xuanx.yellow, .inner input.yellow {
+  color: yellow !important; }
+
+.rb-innerl.purple, .xuanx.purple, .inner input.purple {
+  color: purple !important; }
+
+.rb-innerl.blue, .xuanx.blue, .inner input.blue {
+  color: blue !important; }
+
+.rb-innerl.brown, .xuanx.brown, .inner input.brown {
+  color: brown !important; }
+
+.iCloudleft {
+  width: 29%;
+  height: 100%;
+  background: #383836;
+  overflow: auto; }
+  .iCloudleft .header {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #1a1a1a; }
+    .iCloudleft .header .img {
+      background-image: url(../images/1.png);
+      background-position: 0px -588px;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 56px;
+      height: 16px;
+      top: 15px;
+      left: 12px; }
+    .iCloudleft .header .label {
+      line-height: 31px;
+      font-size: 21px;
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      left: 75px;
+      color: #999;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: 'SFNSDisplay', 'SFNSText', 'Helvetica Neue', sans-serif; }
+    .iCloudleft .header .xiabiao {
+      background-image: url(../images/1.png);
+      background-position: -155px -647px;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 165px;
+      width: 11px;
+      height: 7px;
+      top: 50%;
+      margin-top: -3px; }
+    .iCloudleft .header .add {
+      background-image: url(../images/1.png);
+      background-position: -46px -526px;
+      background-repeat: no-repeat;
+      height: 23px;
+      width: 23px;
+      position: absolute;
+      right: 12px;
+      top: 10px; }
+  .iCloudleft .main {
+    width: 100%;
+    font-size: 13px;
+    color: #fff; }
+    .iCloudleft .main .bottom {
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      overflow: hidden; }
+      .iCloudleft .main .bottom .bottomlists {
+        width: 100%;
+        height: 45px; }
+        .iCloudleft .main .bottom .bottomlists .topinner {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 4px; }
+          .iCloudleft .main .bottom .bottomlists .topinner .icon {
+            background-image: url(../images/1.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            height: 17px;
+            width: 17px; }
+          .iCloudleft .main .bottom .bottomlists .topinner label {
+            display: block;
+            position: absolute;
+            height: 24px;
+            line-height: 24px;
+            top: 8px;
+            left: 42px;
+            right: 42px;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            -o-text-overflow: ellipsis !important;
+            -ms-text-overflow: ellipsis !important;
+            white-space: nowrap !important;
+            font-size: 17px; }
+          .iCloudleft .main .bottom .bottomlists .topinner input {
+            display: block;
+            position: absolute;
+            height: 24px;
+            line-height: 24px;
+            top: 8px;
+            left: 42px;
+            right: 42px;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            -o-text-overflow: ellipsis !important;
+            -ms-text-overflow: ellipsis !important;
+            white-space: nowrap !important;
+            font-size: 17px;
+            background: transparent;
+            outline: none;
+            border: none;
+            color: #fff; }
+          .iCloudleft .main .bottom .bottomlists .topinner .wifi {
+            background-image: url(../images/1.png);
+            background-position: 0px -526px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 9px;
+            right: 10px;
+            width: 23px;
+            height: 23px;
+            margin: 0px;
+            cursor: pointer;
+            opacity: 0.3; }
+          .iCloudleft .main .bottom .bottomlists .topinner .b {
+            position: absolute;
+            left: 44px;
+            right: 0px;
+            bottom: 0px;
+            height: 2px;
+            background-image: url(../images/b.png);
+            background-position: 0px 0px;
+            background-repeat: repeat; }
+          .iCloudleft .main .bottom .bottomlists .topinner .t {
+            position: absolute;
+            left: -4px;
+            right: 0px;
+            top: -2px;
+            height: 2px;
+            background-image: url(../images/t.png);
+            background-position: 0px 0px;
+            background-repeat: repeat;
+            display: none; }
+      .iCloudleft .main .bottom .top {
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        height: 45px; }
+        .iCloudleft .main .bottom .top .topinner {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 4px; }
+          .iCloudleft .main .bottom .top .topinner .icon {
+            top: 0px;
+            left: 0px;
+            height: 42px;
+            width: 42px;
+            background-image: url(../images/1.png);
+            background-position: 0px -359px;
+            background-repeat: no-repeat; }
+          .iCloudleft .main .bottom .top .topinner label {
+            display: block;
+            position: absolute;
+            height: 24px;
+            line-height: 24px;
+            top: 8px;
+            left: 42px;
+            right: 42px;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            -o-text-overflow: ellipsis !important;
+            -ms-text-overflow: ellipsis !important;
+            white-space: nowrap !important;
+            font-size: 17px; }
+          .iCloudleft .main .bottom .top .topinner .b {
+            position: absolute;
+            right: 0px;
+            bottom: -1px;
+            height: 2px;
+            background-image: url(../images/b.png);
+            background-position: 0px 0px;
+            background-repeat: repeat;
+            left: -4px; }
+      .iCloudleft .main .bottom .bottomlists.active {
+        background: #2d2d2b; }
+        .iCloudleft .main .bottom .bottomlists.active .b {
+          left: -4px; }
+        .iCloudleft .main .bottom .bottomlists.active .t {
+          display: block; }
+    .iCloudleft .main .t {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: -2px;
+      height: 2px;
+      background-image: url(../images/t.png);
+      background-position: 0px 0px;
+      background-repeat: repeat; }
+    .iCloudleft .main .b {
+      position: absolute;
+      right: 0px;
+      bottom: -1px;
+      height: 2px;
+      background-image: url(../images/b.png);
+      background-position: 0px 0px;
+      background-repeat: repeat;
+      left: -4px; }
+
+.iCloudright {
+  width: 71%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .iCloudright .right-top {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 45px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+    overflow: hidden;
+    position: absolute;
+    margin: 0px; }
+    .iCloudright .right-top .irt-left {
+      left: 0px;
+      width: 50%;
+      top: 0px;
+      bottom: 0px;
+      position: absolute; }
+      .iCloudright .right-top .irt-left .search {
+        left: 3px;
+        width: 42px;
+        top: 2px;
+        height: 42px;
+        overflow: hidden;
+        position: absolute;
+        margin: 0px; }
+        .iCloudright .right-top .irt-left .search .ico {
+          left: 11px;
+          width: 24px;
+          top: 8px;
+          height: 24px;
+          background-image: url(../images/1.png);
+          background-position: -138px -359px;
+          background-repeat: no-repeat;
+          overflow: hidden;
+          position: absolute;
+          margin: 0px; }
+      .iCloudright .right-top .irt-left .ipt {
+        left: 45px;
+        margin-left: 0px;
+        margin-right: 0px;
+        top: 0px;
+        bottom: 0px;
+        right: 3px;
+        position: absolute; }
+        .iCloudright .right-top .irt-left .ipt .inner {
+          top: 11px;
+          position: absolute;
+          font-size: 19px;
+          color: rgba(0, 0, 0, 0.3);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .iCloudright .right-top .irt-left .ipt .filed {
+          top: 1px;
+          font-size: 19px;
+          color: #333;
+          position: absolute;
+          left: 0px;
+          width: 100%;
+          bottom: 0px;
+          right: 0px;
+          display: block;
+          background: transparent;
+          vertical-align: middle;
+          border: none;
+          outline: none;
+          -webkit-appearance: none; }
+    .iCloudright .right-top .irt-right {
+      right: 2px;
+      top: 0px;
+      bottom: 0px;
+      width: 136px;
+      overflow: hidden;
+      position: absolute;
+      margin: 0px; }
+      .iCloudright .right-top .irt-right .name {
+        left: 0px;
+        right: 55px;
+        top: -6px;
+        bottom: 0px;
+        color: #333;
+        height: 54px;
+        margin: 0px;
+        cursor: pointer;
+        font-size: 21px;
+        position: absolute; }
+        .iCloudright .right-top .irt-right .name .label {
+          line-height: 31px;
+          text-align: right;
+          font-size: 21px;
+          line-height: 30px;
+          margin-top: -15px;
+          padding: 0px 0px 0px 0px;
+          padding-right: 18px;
+          cursor: inherit;
+          top: 50%;
+          display: block;
+          min-height: 30px;
+          font-family: 'SFNSDisplay', 'SFNSText', 'Helvetica Neue', sans-serif; }
+        .iCloudright .right-top .irt-right .name .chevron {
+          background-image: url(../images/1.png);
+          background-position: -62px -391px;
+          background-repeat: no-repeat;
+          position: absolute;
+          width: 11px;
+          height: 7px;
+          top: 50%;
+          margin-top: -3px;
+          right: 0; }
+      .iCloudright .right-top .irt-right .xian {
+        margin-top: -11px;
+        right: 44px;
+        width: 1px;
+        top: 50%;
+        height: 22px;
+        background-color: #e5e5e5;
+        position: absolute; }
+      .iCloudright .right-top .irt-right .que {
+        right: 0px;
+        width: 44px;
+        top: 0px;
+        bottom: 0px;
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        overflow: hidden;
+        position: absolute; }
+        .iCloudright .right-top .irt-right .que .que-icon {
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          top: 50%;
+          left: 50%;
+          margin-top: -11px;
+          margin-left: -11px;
+          background-image: url(../images/1.png);
+          background-position: -137px -526px;
+          background-repeat: no-repeat;
+          right: 0;
+          bottom: 0; }
+  .iCloudright .choice:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 87px;
+    right: -24px;
+    margin-top: -8px;
+    background-image: url(../images/1.png);
+    -webkit-transform: rotate(270deg);
+    background-position: -80px -604px;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 15px;
+    z-index: 2; }
+  .iCloudright .choice.active {
+    display: block; }
+  .iCloudright .choice {
+    position: absolute;
+    width: 363px;
+    height: 234px;
+    border-radius: 8px;
+    top: 11px;
+    right: 78px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15), 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 100;
+    display: none; }
+    .iCloudright .choice .border {
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      right: 4px;
+      bottom: 4px;
+      margin: auto;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.1); }
+      .iCloudright .choice .border .inner {
+        left: 18px;
+        right: 21px;
+        top: 19px;
+        bottom: 4px;
+        position: absolute; }
+        .iCloudright .choice .border .inner > input {
+          left: 2px;
+          right: 0px;
+          top: 0px;
+          height: 42px;
+          width: 100%;
+          padding-left: 10px;
+          position: absolute;
+          border-style: solid;
+          border-color: #d9d9d9;
+          border-width: 1px;
+          border-radius: 2px;
+          font-weight: 300;
+          font-size: 25px;
+          line-height: 1.2; }
+        .iCloudright .choice .border .inner > label {
+          position: absolute;
+          left: 2px;
+          right: 0px;
+          top: 63px;
+          height: 22px; }
+        .iCloudright .choice .border .inner .colorbox {
+          left: 0px;
+          right: 0px;
+          top: 97px;
+          height: 33px;
+          position: absolute; }
+          .iCloudright .choice .border .inner .colorbox .color-list {
+            background-repeat: no-repeat;
+            height: 33px;
+            width: 33px;
+            float: left;
+            margin-left: 10px;
+            display: block; }
+            .iCloudright .choice .border .inner .colorbox .color-list .color {
+              width: 25px;
+              height: 25px;
+              margin-top: 4px;
+              margin-left: 4px;
+              background-image: url(../images/2.png);
+              background-repeat: no-repeat; }
+        .iCloudright .choice .border .inner .btn {
+          width: 100%;
+          height: 35px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          -webkit-user-select: none;
+          user-select: none; }
+          .iCloudright .choice .border .inner .btn > div {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            line-height: 25px;
+            font-size: 17px;
+            color: #007aff; }
+          .iCloudright .choice .border .inner .btn .btnleft {
+            left: 0;
+            color: #ff3b30; }
+          .iCloudright .choice .border .inner .btn .btnmid {
+            right: 78px; }
+          .iCloudright .choice .border .inner .btn span {
+            height: 25px;
+            width: 1px;
+            border-left: 1px #ccc solid;
+            display: block;
+            position: absolute;
+            right: 56px; }
+          .iCloudright .choice .border .inner .btn .btnright {
+            right: 0;
+            font-weight: 700; }
+  .iCloudright .right-bottom {
+    left: 0px;
+    right: 0px;
+    top: 69px;
+    bottom: 0px;
+    overflow: hidden;
+    position: absolute; }
+    .iCloudright .right-bottom .rb-inner {
+      right: 0px;
+      top: 0px;
+      height: 62px;
+      left: 28px;
+      overflow: hidden;
+      position: absolute; }
+      .iCloudright .right-bottom .rb-inner .rb-innerl {
+        left: 0px;
+        right: 200px;
+        top: 0px;
+        bottom: 10px;
+        color: #333;
+        font-size: 40px;
+        line-height: 1.2;
+        font-family: 'SFNSText', 'Helvetica Neue', 'Microsoft Yahei', 'SimHei', sans-serif; }
+      .iCloudright .right-bottom .rb-inner .rb-innerr {
+        right: 30px;
+        width: 39px;
+        top: 17px;
+        height: 27px;
+        margin: 0px;
+        cursor: pointer;
+        font-size: 15px;
+        vertical-align: top;
+        position: absolute; }
+        .iCloudright .right-bottom .rb-inner .rb-innerr .xuanx {
+          line-height: 29px;
+          font-size: 19px;
+          margin-top: -13px;
+          top: 50%;
+          text-align: center;
+          position: absolute;
+          -webkit-user-select: none;
+          user-select: none; }
+    .iCloudright .right-bottom .rb-lis {
+      left: 0px;
+      right: 0px;
+      top: 56px;
+      bottom: 0px;
+      position: absolute; }
+      .iCloudright .right-bottom .rb-lis .rowline {
+        position: absolute;
+        left: 30px;
+        right: 0px;
+        height: 2px;
+        background-image: url(../images/png.png);
+        background-position: 0px 0px;
+        background-repeat: repeat;
+        top: 0px;
+        z-index: 5; }
+    .iCloudright .right-bottom .rb-lis2.active {
+      z-index: 10; }
+      .iCloudright .right-bottom .rb-lis2.active .rowlinet {
+        left: 0;
+        height: 2px;
+        background: #e0ac00; }
+      .iCloudright .right-bottom .rb-lis2.active .rowlineb {
+        height: 1px;
+        left: 0;
+        background: #e0ac00; }
+      .iCloudright .right-bottom .rb-lis2.active .rowbg {
+        background: #e0ac00;
+        opacity: .1; }
+    .iCloudright .right-bottom .rowico.green {
+      background-position: -74px -359px; }
+    .iCloudright .right-bottom .rowico.green.sel {
+      background-position: -136px -199px; }
+    .iCloudright .right-bottom .rb-lis2.fbox {
+      padding-bottom: 30px;
+      height: auto; }
+      .iCloudright .right-bottom .rb-lis2.fbox .rowlinebb {
+        left: 30px;
+        position: absolute;
+        right: 0px;
+        height: 2px;
+        background-image: url(../images/png.png);
+        background-position: 0px 0px;
+        background-repeat: repeat;
+        bottom: -1px; }
+      .iCloudright .right-bottom .rb-lis2.fbox .rowlinett {
+        left: 30px;
+        position: absolute;
+        right: 0px;
+        height: 2px;
+        background-image: url(../images/png.png);
+        background-position: 0px 0px;
+        background-repeat: repeat;
+        top: -1px; }
+    .iCloudright .right-bottom .rb-lis2.fbox:after {
+      content: '';
+      display: block;
+      clear: both; }
+    .iCloudright .right-bottom .rb-lis2 {
+      width: 100%;
+      float: left;
+      height: 52px; }
+      .iCloudright .right-bottom .rb-lis2 .list {
+        width: 100%;
+        height: 52px; }
+      .iCloudright .right-bottom .rb-lis2 .allclear {
+        right: 30px;
+        top: 14px;
+        font-size: 19px;
+        line-height: 22px;
+        bottom: 10px;
+        width: 141px;
+        position: absolute;
+        cursor: pointer;
+        -webkit-user-select: none; }
+      .iCloudright .right-bottom .rb-lis2 .act {
+        right: 156px;
+        top: 0px;
+        height: 52px;
+        left: 30px;
+        position: absolute;
+        float: left; }
+        .iCloudright .right-bottom .rb-lis2 .act .finished {
+          position: absolute;
+          top: 14px;
+          left: 51px;
+          right: 106px;
+          margin: 0px;
+          width: 100%;
+          overflow: hidden !important;
+          text-overflow: ellipsis !important;
+          -o-text-overflow: ellipsis !important;
+          -ms-text-overflow: ellipsis !important;
+          white-space: nowrap !important;
+          color: #999;
+          font-size: 19px;
+          outline: none;
+          border: none;
+          background: transparent; }
+      .iCloudright .right-bottom .rb-lis2 .rowico {
+        z-index: 10;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 11px;
+        left: 36px;
+        background-image: url(../images/1.png);
+        background-repeat: no-repeat; }
+      .iCloudright .right-bottom .rb-lis2 .rowbg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .iCloudright .right-bottom .rb-lis2 .rowlinet {
+        position: absolute;
+        right: 0px;
+        height: 2px;
+        background-image: url(../images/png.png);
+        background-position: 0px 0px;
+        background-repeat: repeat;
+        top: -1px;
+        left: 81px; }
+      .iCloudright .right-bottom .rb-lis2 .rowlineb {
+        position: absolute;
+        right: 0px;
+        height: 2px;
+        background-image: url(../images/png.png);
+        background-position: 0px 0px;
+        background-repeat: repeat;
+        bottom: -1px;
+        left: 81px; }

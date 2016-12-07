@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="icloud">
+	<head>
+		<meta charset="UTF-8">
+		<title>iCloud</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src='js/angular.js'></script>
+		<script src='js/jquery-1.8.3.min.js'></script>
+	</head>
+	<body ng-controller="mainCtrl">
+		<div class="iCloud">
+			<div class="iCloudleft">
+				<div class="header">
+					<div class="img"></div>
+					<div class="label">提醒事项</div>
+					<div class="xiabiao"></div>
+					<div class="add" ng-click='addlist();listSave()'></div>
+				</div>
+				<div class="main">
+					<div class="bottom" ng-li>
+						<div class="top bottomlists">
+							<div class="topinner">
+								<div class="icon"></div>
+								<label>已计划</label>
+								<div class="b"></div>
+							</div>					
+						</div>
+						<div ng-repeat="v in list track by $index" class="bottomlists">
+							<div class="topinner">
+								<div class="icon {{v.theme}}"></div>
+								<input type="text" ng-model="v.name"/>
+								<div class="wifi"></div>
+								<div class="t"></div>
+								<div class="b"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="iCloudright">
+				<div class="right-top">
+					<div class="irt-left">
+						<div class="search">
+							<div class="ico"></div>
+						</div>
+						<div class="ipt">
+							<div class="inner">搜索所有提醒</div>
+							<input type="text" class="filed" />
+						</div>
+					</div>
+					<div class="irt-right">
+						<div class="name">
+							<label class="label">用户名</label>
+							<div class="chevron"></div>
+						</div>
+						<div class="xian"></div>
+						<div class="que">
+							<div class="que-icon"></div>
+						</div>
+					</div>
+				</div>
+				<div class="choice">
+					<div class="border">
+						<div class="inner">
+							<input type="text" class='{{list[cu].theme}}' ng-model="list[cu].name" ng-keyup='listSave()'/>
+							<label>列表颜色</label>
+							<ul class='colorbox'>
+								<li ng-repeat="$c in arr" class="color-list {{$c}}" ng-class='{sel:(list[cu].theme===$c)}' ng-click='list[cu].theme=$c;listSave()' >
+									<div class="color {{$c}}"></div>
+								</li>
+							</ul>
+							<div class="btn">
+								<div class="btnleft">删除</div>
+								<div class="btnmid">取消</div>
+								<span class="xian"></span>
+								<div class="btnright">完成</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right-bottom">
+					<div class="rb-inner">
+						<div class="rb-innerl {{list[cu].theme}}">{{list[cu].name}}</div>
+						<div class="rb-innerr">
+							<label class="xuanx {{list[cu].theme}}" ng-sh>选项</label>
+						</div>
+					</div>
+					<div class="rb-lis">
+						<div class="rowline"></div>
+						<div class="rb-lis2">
+							<div class="list">
+								<div class="act">
+									<div class="finished">已完成：{{fi()}} 项</div>
+								</div>	
+								<div class="allclear" ng-click='finishclear();listSave()'>清除已完成事项</div>
+								<div class="rowlineb"></div>
+							</div>
+						</div>
+						<div class="rb-lis2 fbox">							
+							<div class="rowlinett"></div>
+							<div class="rowlinebb"></div>
+							<div class="rb-lis2 s" ng-repeat='v in list[cu].todos track by $index' ng-if='v.state===1' >
+								<div class="rowbg"></div>
+								<div class="list">
+									<div class="act">
+										<input class="finished" type='text' ng-model='v.val'/>
+									</div>
+								</div>
+								<div class="rowico green sel" ng-click='v.state=0;listSave()'></div>	
+								<div class="rowlinet"></div>
+								<div class="rowlineb"></div>
+							</div>
+							<!--<div class="rb-lis2">
+								<div class="list">
+									<div class="act">
+										<div class="finished">完成</div>
+									</div>
+								</div>
+								<div class="rowico green sel"></div>
+								<div class="rowbg"></div>
+								<div class="rowlinet"></div>
+								<div class="rowlineb"></div>
+							</div>-->
+						</div>
+						<div class="rb-lis2 s" ng-repeat='v in list[cu].todos track by $index' ng-if='v.state===0'>
+							<div class="rowbg"></div>
+							<div class="list">
+								<div class="act">
+									<input ng-model='v.val' class="finished" type='text'/>
+								</div>
+							</div>
+							<div class="rowico green"  ng-click="v.state=1;listSave()">
+							</div>
+							
+							<div class="rowlinet"></div>
+							<div class="rowlineb"></div>
+						</div>
+						<!--<div class="rb-lis2 ">
+							<div class="list">
+								<div class="act">
+									<div class="finished">新项目1</div>
+								</div>
+							</div>
+							<div class="rowico green">
+							</div>
+							<div class="rowbg"></div>
+							<div class="rowlinet"></div>
+							<div class="rowlineb"></div>
+						</div>-->
+						<div class="rb-lis2" ng-click="addItem();listSave()">
+							<div class="list">
+								<div class="act">
+									<div class="finished">新项目</div>
+								</div>
+							</div>
+							<div class="rowbg"></div>
+							<div class="rowlinet"></div>
+							<div class="rowlineb"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/index.js"></script>
+</html>
